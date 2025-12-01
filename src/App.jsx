@@ -5,10 +5,9 @@ import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
-const basename = import.meta.env.DEV ? '/' : '/cvppxt/';
 function App() {
   return (
-    <Routes basename={basename}>
+    <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/presentation" element={<Presentation />} />
       <Route path="/skills" element={<Skills />} />
