@@ -14,8 +14,8 @@ function TypeWriter() {
     }}>
       <TypewriterEffect
           options={{ loop: true,
-                    delay: 30,      // Vitesse frappe (ms par caractère)
-                    deleteSpeed: 15 // Vitesse suppression
+                    delay: 50,      // Vitesse frappe (ms par caractère)
+                    deleteSpeed: 20 // Vitesse suppression
            }}
           onInit={(typewriter) => {
             typewriter
@@ -24,7 +24,7 @@ function TypeWriter() {
               .typeString(`<br>${lines[1]}`)
               .pauseFor(200)
               .typeString(`<br>${lines[2]}`)
-              .pauseFor(800)
+              .pauseFor(2000)
               .deleteAll(1) // Efface tout
               .start();
           }}

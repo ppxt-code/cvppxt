@@ -10,7 +10,7 @@ function Home() {
       <div className="homeBody">
         <div className="homeDiv">
           <h1>Xuan Trang PHAM PHU</h1>
-          <a className="bouton-link"
+          <a className="homelink"
              href={`${basename}documents/PhamPhu_DC_2025.pdf`}
              target="_blank"
              rel="noopener noreferrer" > mon CV </a>

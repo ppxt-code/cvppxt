@@ -26,7 +26,7 @@
     justify-content: center;
 }
 
-.bouton-link {
+.homelink {
   display: inline-block;        
   padding: 12px 24px;           
   background-color: #2a6aaf;    
@@ -39,12 +39,12 @@
   transition: all 0.3s ease;    /* Animation fluide */
   box-shadow: 0 4px 8px rgba(3, 45, 90, 0.3); /* Ombre */
 }
-.bouton-link:hover {
+.homelink:hover {
   background-color: #0056b3;    
   transform: translateY(-2px);  /* Effet surélévation */
   box-shadow: 0 6px 12px rgba(0,123,255,0.4);
 }
-.bouton-link:active {
+.homelink:active {
   transform: translateY(0);     /* Enfoncé au clic */
 }
 
@@ -62,11 +62,17 @@
     min-height: 150px;
     width: 100%;
 }
-.headerWrapper a {           /* Cible <a> à l'intérieur de Link */
+.headerLink { /*.headerWrapper a {  */         /* Cible <a> à l'intérieur de Link */
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1.4rem;
+    display: inline-block; /* Important pour transform */
+    transition: all 0.3s ease; /* Animation fluide */
+}
+.headerLink.active { 
+    color: rgb(170, 202, 228);  
+    transform: translateY(10px); /* Décalage vers le bas de 4px */
 }
 .headerDiv {
     display: flex;
@@ -154,9 +160,18 @@
 }
 .portfolioBody {
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
     align-items: center;
     justify-content: center;
+    gap: 40px;
+    padding: 80px;
+}
+.portfolioFilters {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px;
 }
 .portfolioDiv {
     flex: 1;
