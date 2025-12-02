@@ -18,6 +18,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 80px;
 }
 .homeDiv{
     display: flex;
@@ -62,22 +63,28 @@
     min-height: 150px;
     width: 100%;
 }
+.headerDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    perspective: 1000px; /*deplacement 3d*/
+    perspective-origin: 20% 50%; /*deplacement 3d*/
+}
 .headerLink { /*.headerWrapper a {  */         /* Cible <a> à l'intérieur de Link */
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1.4rem;
     display: inline-block; /* Important pour transform */
-    transition: all 0.3s ease; /* Animation fluide */
+    transform-style: preserve-3d; /*deplacement 3d*/
+    transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Animation fluide */
 }
 .headerLink.active { 
-    color: rgb(170, 202, 228);  
-    transform: translateY(10px); /* Décalage vers le bas de 4px */
-}
-.headerDiv {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    transform: translate3d(0, 8px, 50px) ; /*deplacement 3d */
+    text-shadow:/*deplacement 3d */
+    0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 15px rgba(170, 202, 228, 0.8);
 }
 
 /* Footer */
@@ -165,13 +172,24 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 80px;
+    padding: 20px 80px;
 }
 .portfolioFilters {
     display: flex;
     gap: 15px;
     justify-content: center;
     margin: 20px;
+}
+.portfolioFilter {
+    padding: 8px;
+    background-color: #111ba5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 
+    0 4px 12px rgba(17, 27, 165, 0.6),   
+    0 8px 20px rgba(0, 0, 0, 0.5),        
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .portfolioDiv {
     flex: 1;
@@ -197,6 +215,34 @@
     font-style: italic;
     margin-top: 10px;
 }
+.portfolioLink {
+    color: blue;
+}
+/* modal */
+.modalOverlay {
+  position: fixed; /* Pour sortir du flux normal */
+  z-index: 9999; /* Doit être au-dessus de tout */
+  background-color: transparent;
+
+  top: 0;  left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;    
+  justify-content: center; 
+}
+.modalContent {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  background-color: white; 
+}
+.modalTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.modalText {
+    white-space: pre-line; /* Transforme \n en <br> */
+}
 
 /* contact */
 .contactWrapper {
@@ -211,6 +257,7 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    padding: 80px;
 }
 .contactIcon {
     width: 30px;
