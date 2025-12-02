@@ -218,6 +218,43 @@
     margin-right: 10px;
     vertical-align: middle;
 }
+/* contactUs*/
+.contactUsFields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contactUsLabel {
+    font-weight: bold;
+    width: 100px;
+    display: inline-block;
+}
+.contactUsInput {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    background-color: #2a6aaf;    
+    color: white;         
+    border-radius: 8px; 
+    text-align: center;       
+    border: none;            
+    font-size: 1.1rem;
+    transition: all 0.3s ease;    /* Animation fluide */
+    box-shadow: 0 4px 8px rgba(3, 45, 90, 0.3); /* Ombre */                      
+}
+.contactUsInput:hover {
+  background-color: #0056b3;    
+  transform: translateY(-2px);  /* Effet surélévation */
+  box-shadow: 0 6px 12px rgba(0,123,255,0.4);
+}
+.contactUsInput:active {
+  transform: translateY(0);     /* Enfoncé au clic */
+}
+.contactUsSubmit {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
