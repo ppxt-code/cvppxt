@@ -7,6 +7,10 @@ import kasaImage from '../../assets/kasa.png';
 import sophieImage from '../../assets/sophie.png';
 import grimoireImage from '../../assets/grimoire.png';
 import { useState } from "react";
+import reactImg from '../../assets/skills/frontEnd/react.webp';
+import javascriptImg from '../../assets/skills/frontEnd/javascript.webp';
+import nodejsImg from '../../assets/skills/backEnd/nodeJs.webp';
+
 
 function Portfolio() {
   const [filter, setFilter] = useState("all");
@@ -24,18 +28,18 @@ function Portfolio() {
     },
     {
       id: 2,
-      category: "front githubpages",
+      category: "front githubpages javascript",
       title: "Optimisation et debug",
       name: "Nina Carducci",
       github: "https://github.com/ppxt-code/Nina-Carducci-Dev",
       link: "https://ppxt-code.github.io/Nina-Carducci-Dev/",
       image: ninaCarducciImage,
       alt: "Nina Carducci : site vitrine pour une photographe",
-      modalContent: "Optimisation du site nina-carducci.github.io (CSS,boostrap,javascript) pour les moteurs de recherche et debug.\nRésultats:\namélioration des performances de 60 à 98,\n de l'accessibilité de 70 à 100,\n du SEO de 73 à 100.\nPoints difficiles:\n l'adaptation du css et beaucoup de règles de boostrap ne sont visibles qu'en live"
+      modalContent: "Optimisation du site nina-carducci.github.io (CSS,boostrap,javascript) pour les moteurs de recherche et debug.\nRésultats (lighthouse):\namélioration des performances de 60 à 98,\n de l'accessibilité de 70 à 100,\n du SEO de 73 à 100.\nPoints difficiles:\n l'adaptation du css et beaucoup de règles de boostrap ne sont visibles qu'en live"
     },
     {
       id: 3,
-      category: "front githubpages",
+      category: "front githubpages react",
       title: "React",
       name: "Kasa",
       github: "https://github.com/ppxt-code/kasa",
@@ -46,7 +50,7 @@ function Portfolio() {
     },   
     {
       id: 4,
-      category: "front",
+      category: "front javascript",
       title: "Développement WEB avec JavaScript",
       name: "Sophie Bluel",
       github: "https://github.com/ppxt-code/Portfolio-architecte-sophie-bluel",
@@ -57,7 +61,7 @@ function Portfolio() {
     },   
     {
       id: 5,
-      category: "back",
+      category: "back nodejs",
       title: "Développement back-end avec Node.js",
       name: "Mon Vieux Grimoire",
       github: "https://github.com/ppxt-code/mon-vieux-grimoire-backend",
@@ -81,6 +85,13 @@ function Portfolio() {
           title="intervention BackEnd">BackEnd</button>
         <button onClick={() => setFilter("githubpages")} className="portfolioFilter" 
           title="puis cliquer sur l'image pour accéder à sa GitHub Page">GitHub Pages</button>
+          
+        <button className="portfolioIconButton" onClick={() => setFilter("javascript")} title="javascript">
+          <img className="portfolioIcon" src={javascriptImg} alt="JavaScript" /></button>
+        <button className="portfolioIconButton" onClick={() => setFilter("react")} title="react">
+          <img className="portfolioIcon" src={reactImg} alt="React" /></button>
+        <button className="portfolioIconButton" onClick={() => setFilter("nodejs")} title="nodejs">
+          <img className="portfolioIcon" src={nodejsImg} alt="Node.js" /></button>
       </div>
       <div className="portfolioBody">
         {filteredProjects.map(proj => (
@@ -103,56 +114,5 @@ function Portfolio() {
       <Footer />
     </div>
   );
-  /*return (
-    <div className="portfolioWrapper">
-      <Header />
-      <div className="portfolioBody">
-        <div className="portfolioDiv">
-            <p className="portfolioText">Intégration web avec HTML, CSS</p>
-            <p>github : <a href="https://github.com/ppxt-code/booki-starter-code" target="_blank" rel="noopener noreferrer">Booki</a></p>
-            <div><a href="https://ppxt-code.github.io/booki-starter-code/" target="_blank" rel="noopener noreferrer">
-                    <img className="portfolioImage" src={bookiImage} alt="Booki : plateforme de réservation d'hébergements et d'activités" />
-
-                </a>
-            </div>
-            <p className="portfolioComment">cliquer pour accéder au projet</p>
-        </div>  
-        <div className="portfolioDiv">
-            <p className="portfolioText">Optimisation et debug</p>
-            <p>github : <a href="https://github.com/ppxt-code/Nina-Carducci-Dev" target="_blank" rel="noopener noreferrer">Nina Carducci</a></p>
-            <div><a href="https://ppxt-code.github.io/Nina-Carducci-Dev/" target="_blank" rel="noopener noreferrer">
-                    <img className="portfolioImage" src={ninaCarducciImage} alt="Nina Carducci : site vitrine pour une photographe" />
-                 </a>
-            </div>
-            <p className="portfolioComment">cliquer pour accéder au projet</p>
-        </div>
-        <div className="portfolioDiv">
-            <p className="portfolioText">React</p>
-            <p>github : <a href="https://github.com/ppxt-code/kasa" target="_blank" rel="noopener noreferrer">Kasa</a></p>
-            <div><a href="https://ppxt-code.github.io/kasa" target="_blank" rel="noopener noreferrer">
-                    <img className="portfolioImage" src={kasaImage} alt="Kasa : plateforme de location d'appartements" />
-                  </a>
-            </div>
-            <p className="portfolioComment">cliquer pour accéder au projet</p>
-        </div>
-      </div>
-      <br/>
-      <div className="portfolioBody">
-        <div className="portfolioDiv">
-            <p className="portfolioText">Développement WEB avec JavaScript</p>
-            <p>github : <a href="https://github.com/ppxt-code/Portfolio-architecte-sophie-bluel" target="_blank" rel="noopener noreferrer">Sophie Bluel</a></p>
-            <div><img className="portfolioImage" src={sophieImage} alt="Sophie Bluel : site vitrine pour une architecte" />
-            </div>
-        </div>
-        <div className="portfolioDiv">
-            <p className="portfolioText">Développement back-end avec Node.js</p>
-            <p>github : <a href="https://github.com/ppxt-code/mon-vieux-grimoire-backend" target="_blank" rel="noopener noreferrer">Mon Vieux Grimoire</a></p>
-            <div><img className="portfolioImage" src={grimoireImage} alt="Mon Vieux Grimoire : back-end d'un site de notation de livres" />
-            </div>
-        </div>
-      </div>
-      <Footer />
-    </div>
-  );*/
 }
 export default Portfolio
