@@ -1,16 +1,38 @@
-# React + Vite
+[![Vite](https://img.shields.io/badge/Vite-%23646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Application Web (FrontEnd) de mon portfolio 
 
-Currently, two official plugins are available:
+## Description et Fonctionnalités principales
+Application web développée avec Vite, React pour afficher mon portefolio.
+Il détaille mes compétences, les projets réalisés avec leur lien sur le code GitHub, et pour certains un lien sur GitHub Pages.
+On peut télécharger mon CV, me contacter par email, ou etre redirigé sur ma page LinkedIn.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies utilisées 
+- React JS (composants fonctionnels)  
+- React Router pour la navigation  
+- CSS pour la gestion des styles 
 
-## React Compiler
+## Installation
+1. Cloner le dépôt :  
+- git clone https://github.com/ppxt-code/cvppxt.git
+- cd cvppxt
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Installer les dépendances :  
+npm install
 
-## Expanding the ESLint configuration
+3. Lancer l'application en mode développement :  
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Structure du projet
+- `/src/components` : Composants React (Carousel, ContactUs, Footer, Header, ModalButton, Star, TypeWriter)  
+- `/src/pages` : Pages principales (Contact, Home, Portfolio, Presentation, Skills) 
+- `/src/css` : Fichiers css 
+- `/src/App.js` : Routeur principal  
+
+## Routes 
+- "/"                 redirige vers la page Home
+- "/presentation"     redirige vers la page Presentation
+- "/skills"           redirige vers la page Compétences
+- "/portfolio"        redirige vers la page Portfolio
+- "/error" ou autre   redirige vers la page Error
