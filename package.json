@@ -8,7 +8,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:gh": "npm run build && cp dist/index.html dist/404.html",
+    "preview:gh": "npm run build:gh && npm run preview",
+    "deploy": "npm run build:gh"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
