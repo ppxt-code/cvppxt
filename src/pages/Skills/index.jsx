@@ -11,7 +11,7 @@ function Skills() {
   return (
     <div className="skillsWrapper">
         <Header />
-        <div className="skillsBody">
+        <main className="skillsBody">
             <div className="skillsDiv"> 
                 <div><p>Front End :<br/>
                     <Star /> HTML5, CSS3/Sass, JavaScript, React.js <br/>
@@ -37,11 +37,11 @@ function Skills() {
                 <Star /> Apache CXF : Services web SOAP/REST<br/>
                 </p>
             </div>
-        </div>
-        <div className="skillsCarouselWrapper">
+        </main>
+        <aside className="skillsCarouselWrapper">
           <div className="skillsCarousel"><Carousel images={frontEndImages} /></div>
           <div className="skillsCarousel"><Carousel images={backEndImages} /></div>
-        </div>
+        </aside>
         <Footer />
     </div>
   );

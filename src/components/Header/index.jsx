@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 function Header() {
     return (
-        <div className="headerWrapper">
+        <header className="headerWrapper">
             <div className="headerDiv">
                 <NavLink to="/" className={({ isActive }) => 
                         isActive ? "headerLink active" : "headerLink"
@@ -21,7 +21,7 @@ function Header() {
                         isActive ? "headerLink active" : "headerLink"
                     }>Contact</NavLink> 
             </div>      
-        </div>
+        </header>
     );
 }
 export default Header

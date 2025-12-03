@@ -7,7 +7,7 @@ function Presentation() {
   return (
     <div className="presentationWrapper">
       <Header />
-      <div className="presentationBody">
+      <main className="presentationBody">
         <img className="presentationPhoto" src={photo} alt="ma photo"/><br/>
         <ul className="presentationText">
             <li>8 ans d'expérience en programmation orientée objet (C++, java) + 3 ans d'expérience en java JEE</li>
@@ -22,7 +22,7 @@ function Presentation() {
                             </ul>       
             </li>
         </ul>
-        </div>
+      </main>
       <Footer />
     </div>
   );

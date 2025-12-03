@@ -76,7 +76,7 @@ function Portfolio() {
   return (
     <div className="portfolioWrapper">
       <Header />
-      <div className="portfolioFilters">
+      <aside className="portfolioFilters">
         <button onClick={() => setFilter("all") } className="portfolioFilter" 
           title="tous les projets">Tous</button>
         <button onClick={() => setFilter("front")} className="portfolioFilter" 
@@ -92,8 +92,8 @@ function Portfolio() {
           <img className="portfolioIcon" src={reactImg} alt="React" /></button>
         <button className="portfolioIconButton" onClick={() => setFilter("nodejs")} title="nodejs">
           <img className="portfolioIcon" src={nodejsImg} alt="Node.js" /></button>
-      </div>
-      <div className="portfolioBody">
+      </aside>
+      <main className="portfolioBody">
         {filteredProjects.map(proj => (
           <div key={proj.id} className="portfolioDiv">
             <p className="portfolioText">{proj.title}</p>
@@ -110,7 +110,7 @@ function Portfolio() {
             </div>
           </div>
         ))}
-      </div>
+      </main>
       <Footer />
     </div>
   );

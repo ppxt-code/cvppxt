@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="homeWrapper">
       <Header />
-      <div className="homeBody">
+      <main className="homeBody">
         <div className="homeDiv">
           <h1>Xuan Trang PHAM PHU</h1>
           <a className="homelink"
@@ -16,7 +16,7 @@ function Home() {
              rel="noopener noreferrer" > mon CV </a>
         </div>
         <TypeWriter />
-      </div>
+      </main>
       <Footer />
     </div>
   );
