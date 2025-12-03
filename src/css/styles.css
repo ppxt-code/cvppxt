@@ -116,8 +116,8 @@
     padding: 80px;
 }
 .presentationPhoto {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -186,7 +186,7 @@
     flex-wrap: wrap;
     margin: 20px;
 }
-.portfolioFilter {
+.portfolioFilter, .modalButton {
     padding: 8px;
     background-color: #111ba5;
     color: white;
@@ -254,7 +254,7 @@
   width: 300px;
   height: 400px;
   padding: 20px;
-  background-color: white; 
+  background-color: rgb(233, 226, 226); 
 }
 .modalTitle {
     font-size: 1rem;
@@ -263,6 +263,24 @@
 }
 .modalText {
     white-space: pre-line; /* Transforme \n en <br> */
+}
+.modalButton {
+    margin: 8px;
+}
+.modalCloseDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modalClose {
+    background: white;
+    border: none;
+    border-radius: 0;                
+    width: 30px;                    
+    height: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* contact */
