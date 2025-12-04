@@ -110,8 +110,6 @@
 .presentationBody {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     flex: 1;
     padding: 80px;
 }
@@ -120,6 +118,11 @@
     width: 120px;
     border-radius: 50%;
     object-fit: cover;
+}
+.presentationPhotoDiv {
+    display: flex;
+    justify-content: center;    
+    margin-bottom: 20px;
 }
 .presentationText{
     font-size: 1.2rem;
@@ -136,6 +139,12 @@
     display:flex;
     min-height:100vh;
     flex-direction: column;
+}
+.skillsMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 .skillsBody {
     display: flex;

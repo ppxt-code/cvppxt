@@ -1,6 +1,6 @@
 function Star() {
   return (
-    <span style={{ color: 'gold', fontSize: '15px' }}>
+    <span style={{ color: 'blue', fontSize: '15px' }}>
       ★
     </span>
   );

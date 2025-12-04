@@ -27,12 +27,12 @@ export const ContactUs = ({ onSuccess, onError }) => {
   return (
     <form ref={form} onSubmit={sendEmail}>
         <div className="contactUsFields">
-            <div><label className="contactUsLabel">Name</label>
-                <input type="text" name="name" /></div>
-            <div><label className="contactUsLabel">Email</label>
-                <input type="email" name="from_email" /></div>
-            <div><label className="contactUsLabel">Message</label>
-                <textarea name="message" /></div>  
+            <div><label className="contactUsLabel" for="name">Name</label>
+                <input type="text" name="name" id="name"/></div>
+            <div><label className="contactUsLabel" for="from_email">Email</label>
+                <input type="email" name="from_email" id="from_email" /></div>
+            <div><label className="contactUsLabel" for="message">Message</label>
+                <textarea name="message" id="message" /></div>  
         </div>
         <div className="contactUsSubmit">
             <input type="submit" className="contactUsInput" value="Send" />

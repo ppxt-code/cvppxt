@@ -11,14 +11,16 @@ function Skills() {
   return (
     <div className="skillsWrapper">
         <Header />
-        <main className="skillsBody">
+        <main className="skillsMain">
+          <h1>Compétences</h1>
+          <div className="skillsBody">
             <div className="skillsDiv"> 
-                <div><p>Front End :<br/>
-                    <Star /> 1) HTML5, CSS3/Sass, JavaScript, React.js <br/>
+                <div><h2>Front End :</h2>
+                 <p><Star /> 1) HTML5, CSS3/Sass, JavaScript, React.js <br/>
                     <Star /><Star /> 2) JSF(PrimeFaces)/JSP(JSTL)
                 </p><br/>
-                <p>Outils et Tests :<br/>
-                    JUnit/TestNG, Log4j <br/>
+                <h2>Outils et Tests :</h2>
+                 <p>JUnit/TestNG, Log4j <br/>
                     Git/GitHub, SVN<br/>
                     Maven, Tomcat Server, Apache CFX<br/>
                     Visual Studio Code, Eclipse<br/>
@@ -26,8 +28,8 @@ function Skills() {
                 </p></div>
             </div>
             <div className="skillsDiv">
-                <p>Back End :<br/>
-                <Star /> 1) Node.js, Express<br/>
+                <div><h2>Back End :</h2>
+                <p><Star /> 1) Node.js, Express<br/>
                 <Star /> BDD: MongoDB(Mongoose)<br/>
                 <Star /><Star /> 2) JEE(servlets, EJB), Java 8, Spring/JPA(Hibernate)<br/>
                 <Star /> Apache CXF : Services web SOAP/REST<br/>
@@ -35,8 +37,9 @@ function Skills() {
                  3) <Star /><Star /><Star /> C++, <Star /> C#<br/>
                 <Star /> BDD: OracleXE<br/>
                 <Star /> API REST<br/>
-                </p>
+                </p></div>
             </div>
+          </div>
         </main>
         <aside className="skillsCarouselWrapper">
           <div className="skillsCarousel"><Carousel images={frontEndImages} /></div>
