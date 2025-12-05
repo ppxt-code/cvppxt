@@ -26,7 +26,7 @@ npm run dev
 
 ## Structure du projet
 - `/src/components` : Composants React (Carousel, ContactUs, Footer, Header, ModalButton, Star, TypeWriter)  
-- `/src/pages` : Pages principales (Contact, Home, Portfolio, Presentation, Skills) 
+- `/src/pages` : Pages principales (Contact, Home, Portfolio, Presentation, Skills, Error) 
 - `/src/css` : Fichiers css 
 - `/src/App.js` : Routeur principal  
 
