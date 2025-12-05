@@ -12,10 +12,7 @@ const Carousel = ({ images }) => {
       items: 3
     }
   };
-
-  // DEBUG
-  console.log('Images reçues:', images);
-
+  
   return (
     <div style={{ padding: '20px 0', width: '100%' }}>
       <MultiCarousel

@@ -162,6 +162,12 @@
     font-size: 1rem;
     font-weight: bold;
     color: rgb(83, 80, 80);
+    width: 100%;
+}
+.skillsDiv > div {
+    margin: 0;  
+    padding: 0;
+    width: 100%;
 }
 .skillsCarouselWrapper {
     display: flex;

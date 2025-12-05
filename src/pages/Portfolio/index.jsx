@@ -39,14 +39,14 @@ function Portfolio() {
     },
     {
       id: 3,
-      category: "front githubpages react",
+      category: "front githubpages javascript react",
       title: "React",
       name: "Kasa",
       github: "https://github.com/ppxt-code/kasa",
       link: "https://ppxt-code.github.io/kasa",
       image: kasaImage,
       alt: "Kasa : plateforme de location d'appartements",
-      modalContent: "Développement du front-end de l'application en React (composants React, routes React Router, Vite) et Sass.\nFournis: guide de contraintes techniques, maquettes Figma responsives, fichier JSON avec des annonces de logement (back-end data)\nPoints difficiles:\nchanger l'image et le texte en fonction des mediaqueries\nrediriger vers une page dédiée par logement\nchoisir le texte du lien selon qu'on est sur la page to"
+      modalContent: "Développement du front-end de l'application en React (composants React, routes React Router, Vite) et Sass.\nFournis: guide de contraintes techniques, maquettes Figma responsives, fichier JSON avec des annonces de logement (back-end data)\nPoints difficiles:\nchanger l'image et le texte en fonction des media queries\nrediriger vers une page dédiée par logement\nchoisir le texte du lien selon qu'on est sur la page désignée par l'attribut to"
     },   
     {
       id: 4,
@@ -57,7 +57,7 @@ function Portfolio() {
       link: "",
       image: sophieImage,
       alt: "Sophie Bluel : site vitrine pour une architecte",
-      modalContent: "Completion du FrontEnd de la page d'accueil en html,css,javascript.\nSont fournis le back-end avec le swagger UI de l'API, le Figma et le Kanban.\nPoints difficiles:\n la gestion des imports,\n l'évènement de close en clic hors de la modale,\n la gestion du temps de chargement des images pour positionner une ancre."
+      modalContent: "Completion du FrontEnd de la page d'accueil en html,css,javascript.\nSont fournis le back-end avec le swagger UI de l'API, le Figma et le Kanban.\nPoints difficiles:\n la gestion des imports,\n l'évènement de close en clic hors de la modale,\n la gestion du temps de chargement des images pour positionner une ancre située après."
     },   
     {
       id: 5,
