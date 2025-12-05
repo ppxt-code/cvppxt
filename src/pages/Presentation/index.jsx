@@ -14,14 +14,15 @@ function Presentation() {
         <p className="presentationText">
             J'ai pu intervenir sur des projets variés: très grosses applications, petites applications from scratch
             et mes domaines d’intervention sont : BackEnd, FrontEnd, Conception, Développement, Optimisation de code.
-        </p>
-        <h2>Ma formation est</h2>
-            <p className="presentationText">Double compétence Scientifique/ Informatique 
+        </p><br/>
+        <h2>Ma formation est :</h2>
+        <p className="presentationText">Double compétence Scientifique/ Informatique 
               <em className="presentationEm"> (Post Graduée en Calcul Scientifique, <br/> DEA de Physique Statistique,
               Maitrise de mathématiques appliquées, <br/>Développeur WEB, Développeur Java JEE, Développeur C#)
                </em>
-            </p>
-            <p className="presentationText">Finance de Marché <em className="presentationEm">(Certificat de compétences des marchés financiers)</em> et Actuariat.</p>
+        </p>
+        <p className="presentationText">Finance de Marché <em className="presentationEm">(Certificat de compétences des marchés financiers)</em> et Actuariat.</p>
+        <br/>
         <h2>Je recherche un poste en tant que Développeur Web (FrontEnd, BackEnd, FullStack) <br/>ou Développeur Objet.</h2>
       </main>
       <Footer />

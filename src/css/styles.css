@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
 }
 /* Home */
 .homeWrapper {
@@ -52,6 +53,8 @@
 
 /* Header */
 .headerWrapper {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,6 +116,17 @@
     flex: 1;
     padding: 80px;
 }
+.presentationBody h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.presentationBody h2 {
+    font-size: 1.2rem;
+}
+.presentationBody p {
+    font-size: 1.1rem;
+    color:rgb(72, 71, 71);
+}
 .presentationPhoto {
     height: 120px;
     width: 120px;
@@ -130,7 +144,7 @@
     line-height: 1.5;
 }
 .presentationEm {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color:rgb(60, 58, 58)
 }
 
@@ -329,6 +343,18 @@
     font-weight: bold;
     width: 100px;
     display: inline-block;
+}
+.contactUsInputtext, .contactUsTextArea {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    width: 300px;
+    background-color: #f0f0f0;    
+    color: #333;         
+    border-radius: 8px; 
+    text-align: center;       
+    border: 1px solid #ccc;            
+    font-size: 1.1rem;                     
 }
 .contactUsInput {
     display: flex;
