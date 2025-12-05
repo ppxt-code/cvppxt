@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://tonusername.github.io/tonrepo/sitemap.xml
+
+# GitHub Pages SPA
+Disallow: /assets/
