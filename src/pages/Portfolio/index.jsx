@@ -46,7 +46,7 @@ function Portfolio() {
       link: "https://ppxt-code.github.io/kasa",
       image: kasaImage,
       alt: "Kasa : plateforme de location d'appartements",
-      modalContent: "Développement du front-end de l'application en React (composants React, routes React Router, Vite) et Sass.\nFournis: guide de contraintes techniques, maquettes Figma responsives, fichier JSON avec des annonces de logement (back-end data)\nPoints difficiles:\nchanger l'image et le texte en fonction des media queries\nrediriger vers une page dédiée par logement\nchoisir le texte du lien selon qu'on est sur la page désignée par l'attribut to"
+      modalContent: "Développement du front-end de l'application en React (composants React, routes React Router, Vite) et Sass.\nFournis: guide de contraintes techniques, maquettes Figma responsives, fichier JSON avec des annonces de logement (back-end data)\nPoints difficiles:\nchanger l'image et le texte en fonction des media queries\nrediriger vers une page dédiée par logement\nchoisir le texte du lien selon qu'on est sur la page du lien"
     },   
     {
       id: 4,
