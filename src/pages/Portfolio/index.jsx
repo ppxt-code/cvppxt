@@ -68,7 +68,7 @@ function Portfolio() {
       link: "",
       image: grimoireImage,
       alt: "Mon Vieux Grimoire : back-end d'un site de notation de livres",
-      modalContent: "Développement du backEnd en Node.js,Express,MongoDB\nFournis: les specificites fonctionnelles, la maquette Figma, les spécifications techniques de l’API, le code du front-end\nPoints difficiles:\nenlever les messages d'erreur d'EOF linux dans un environnement Windows\nutilisation de dotenv"
+      modalContent: "Développement du backEnd en Node.js,Express,MongoDB\nFournis: les spécificités fonctionnelles, la maquette Figma, les spécifications techniques de l’API, le code du front-end\nPoints difficiles:\nenlever les messages d'erreur d'EOF linux dans un environnement Windows\nutilisation de dotenv\nécriture du regex (protéger des attaques xss)"
     }   
   ];
   const filteredProjects = filter === "all" ? projects 

@@ -10,7 +10,7 @@ export const ModalButton = ({
   const closeModal = () => setIsOpen(false);
   return (
     <>
-      <button  className="modalButton"  onClick={openModal} >
+      <button  className="modalButton" title="description du projet" onClick={openModal} >
         {buttonText}
       </button>
       {isOpen && (
