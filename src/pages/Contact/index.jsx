@@ -36,8 +36,8 @@ function Contact() {
           <div className="errorMsg">❌ Erreur : {errorMsg}</div>
         )}
         <ContactUs  onSuccess={handleSuccess} onError={handleError} />
-        <h2><img className="contactIcon" src={phoneIcon} alt="icone telephone"/>06 24 85 91 35</h2>
-        <h2><img className="contactIcon" src={mailIcon} alt="icone email"/>xuantrang.phamphutu@gmail.com</h2>
+        <h2 className="contactTitle"><img className="contactIcon" src={phoneIcon} alt="icone telephone"/>06 24 85 91 35</h2>
+        <h2 className="contactTitle"><img className="contactIcon" src={mailIcon} alt="icone email"/>xuantrang.phamphutu@gmail.com</h2>
       </main>
       <Footer />
     </div>

@@ -6,6 +6,8 @@ function Header() {
                 <NavLink to="/" className={({ isActive }) => 
                         isActive ? "headerLink active" : "headerLink"
                     }>Accueil</NavLink>
+            </div> 
+            <div className="headerDiv">
                 <NavLink to="/presentation" className={({ isActive }) => 
                         isActive ? "headerLink active" : "headerLink"
                     }>Présentation</NavLink>
