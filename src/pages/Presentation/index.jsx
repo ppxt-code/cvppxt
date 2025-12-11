@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import photo from '../../assets/maPhoto.jpg';
+import photo from '../../assets/maPhoto.webp';
 
 function Presentation() {
     
